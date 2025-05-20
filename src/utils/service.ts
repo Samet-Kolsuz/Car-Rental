@@ -43,9 +43,18 @@ export const fetchCars = async (
   url += `&limit=10`;
   url += `&offset=${offset}`;
 
-  const res = await fetch(url);
+  // console.log('Fetching URL:', url);
 
-  const data = await res.json();
-
-  return data;
+  try {
+    const res = await fetch(url);
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
+    const data = await res.json();
+    // console.log('API Response:', data);
+    return data;
+  } catch (error) {
+    console.error('Error fetching cars:', error);
+    throw error;
+  }
 };
