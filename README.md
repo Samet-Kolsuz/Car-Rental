@@ -74,10 +74,4 @@ Projemize katkıda bulunmak ister misiniz? Harika! İşte adımlar:
 4. 📤 Branch'inizi push edin (`git push origin feature/amazing-feature`)
 5. 🔄 Pull Request oluşturun
 
-## 📜 Lisans
-
-MIT License - Detaylar için [LICENSE](LICENSE) dosyasına bakın.
-
----
-
 > 💡 **İpucu**: Projeyi beğendiyseniz yıldız vermeyi unutmayın! ⭐
